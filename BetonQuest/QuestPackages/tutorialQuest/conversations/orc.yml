@@ -1,0 +1,40 @@
+conversations:
+  Орк:
+    quester: "Орк"
+    first: "firstGreeting"
+
+
+    NPC_options:
+      firstGreeting:
+        text: "Орки - это крупные ребята с зеленой кожей, острыми клыками и грубыми чертами лица. Они обладают физической силой, выносливостью и боевым духом. Орки часто представлены как воины, живущие в племенах или кланах, ценящих силу и верность своему вождю."
+        pointer: "whereYouFrom,яещеподумаю"
+      whoAmI:
+        text: "Вы подтверждаете выбор этой расы? Потом её сменить уже будет нельзя"
+        pointer: "smallIsland,bigCity"
+      islandAnswer:
+        text: "Поздравляем, теперь вы &a&lОрк!" 
+        events: "raceOrc,tagracecomplete"
+      cityAnswer:
+        text: "Oh I know! I think you're from Kayra, right? Nice city but to be honest I prefer country life... You look a bit hungry. Do you want something to eat?"
+        pointer: "yesPlease" 
+      foodAnswer:
+        text: "You're welcome! Take it... &7*gives food*"
+      подумай:
+        text: "Возвращайся как надумаешь"
+
+    player_options:
+      whereYouFrom:
+        text: "Выбрать рассу Орк"
+        pointer: "whoAmI"
+      яещеподумаю:
+        text: "Я еще подумаю"
+        pointer: "подумай"
+      smallIsland:
+        text: "Да"
+        pointer: "islandAnswer"
+      bigCity:
+        text: "Нет"
+        pointer: "firstGreeting"
+      yesPlease: 
+        text: "Oh yes I'm starving! Thank you."
+        pointer: "foodAnswer"

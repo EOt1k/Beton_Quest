@@ -1,0 +1,3 @@
+conditions:
+  has_tag_race: tag tagrace
+  has_tag_race_complete: tag tagracecomplete

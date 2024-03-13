@@ -1,0 +1,38 @@
+conversations:
+  God adventure:
+    quester: "Бог Приключений"
+
+    NPC_options:
+      выбор рассы:
+        text: "Теперь тебе предстоит выбрать расу, сделай свой выбор"
+        pointers: выбор рассы
+        conditions: has_tag_race, !has_tag_race_complete
+      Начало:
+        text: "Добро пожаловать, %player% ! Выбери путь, по которому пойдет твой герой. Какой крови он будет, какую расу ты выберешь?"
+        pointers: Раса, назад
+        conditions: "!has_tag_race"
+      Ответка:
+        text: "Буду ждать"
+        events: movenpc, tagrace
+      назад2:
+        text: "Хорошо, возвращаюсь назад"
+        events: movenpcback
+      ок:
+        text: ТЫ сделал выбор, отлично, теперь пришло время выйти тебе в свет, пошли провожу тебя до конца, так сказать, довожу своё дело до конца
+        conditions: has_tag_race_complete
+        pointers: node_1
+
+    player_options:
+      выбор рассы:
+        text: Хорошо
+      назад:
+        text: "Вернись назад"
+        pointers: назад2
+        event:
+      Раса:
+        text: "Хорошо"
+        pointers: Ответка
+      node_1:
+        text: Пойдём
+        events: movenpc2
+    first: Начало, выбор рассы, ок

@@ -1,0 +1,13 @@
+events:
+  raceOrc: "command setrace %player% Orc"
+  raceHuman: "command setrace %player% Human"
+  raceDwarf: "command setrace %player% Dwarf"
+  raceElf: "command setrace %player% Elf"
+  movenpc: "movenpc 8 4823;-54;5077;world 4823;-54;5096;world"
+  movenpcback: "movenpc 8 4823;-54;5096;world, 4823;-54;5090;world "
+  tagdel: tag del tagracecomplete
+  tagdel1: folder tagdel, tagrace2
+  tagrace: tag add tagrace
+  tagrace2: tag del tagrace
+  tagracecomplete: tag add tagracecomplete
+  movenpc2: movenpc 8 4823;-54;5077;world 4823;-54;5096;world

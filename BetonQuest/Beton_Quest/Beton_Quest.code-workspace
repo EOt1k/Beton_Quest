@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../.cache"
+		},
+		{
+			"path": "../QuestPackages"
+		}
+	],
+	"settings": {}
+}
