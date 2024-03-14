@@ -1,0 +1,11 @@
+diff --git a/BetonQuest/QuestPackages/tutorialQuest/package.yml b/BetonQuest/QuestPackages/tutorialQuest/package.yml
+--- BetonQuest/QuestPackages/tutorialQuest/package.yml
++++ BetonQuest/QuestPackages/tutorialQuest/package.yml
+@@ -4,5 +4,6 @@
+   '1': "Чел"
+   '2': "Дварф"
+   '3': "Эльф"
+   '8': "God adventure"
++  '9': "123"
+   
+\ No newline at end of file
